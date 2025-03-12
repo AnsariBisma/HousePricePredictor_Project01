@@ -43,11 +43,12 @@ Used **California Housing Dataset** from `sklearn.datasets`.
 - **Random Forest**
 - **XGBoost**  
 
-### Best Model: **XGBoost** before hyperparametr tuning (Highest R², Lowest RMSE & MAE)
+#### Best Model: **XGBoost** before hyperparametr tuning (Highest R², Lowest RMSE & MAE)
 
 ### Hyperparameter Tuning
-**GridSearchCV for optimizing Random Forest.**
-#### **Best Model After Hyperparameter Tuning: RandomForestRegressor
+**Used GridSearchCV for optimizing Random Forest.**
+
+#### Best Model After Hyperparameter Tuning: **RandomForestRegressor**
 
 ----
 ## Deployment Strategy & API Usage Guide
