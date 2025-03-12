@@ -1,7 +1,7 @@
 🏡 House Price Prediction - Machine Learning Project
 
 **Overview**
-This project develops a **Machine Learning model** to predict house prices based on various housing features. The project covers:
+This project involves building and deploying a machine learning model (e.g., Linear Regression, Decision Tree, Random Forest, XGBoost) to predict house prices using regression techniques. The project covers:
 
 - Data Preprocessing & Feature Engineering
 - Model Training & Hyperparameter Tuning  
@@ -25,29 +25,31 @@ house_price_prediction/
 ---
 
 ## Data Preprocessing & Feature Engineering
-### Dataset Used
-We used the **California Housing Dataset** from `sklearn.datasets`.
+1) **Dataset Used**
+Used **California Housing Dataset** from `sklearn.datasets`.
 
-### 🔹 Preprocessing Steps
+2) **Preprocessing Steps**
 -  **Loaded dataset** into Pandas DataFrame.
 -  **Checked missing values** → No missing values found.
 -  **Feature Scaling** → Used `StandardScaler()`.
 -  **Feature Selection** → Identified highly correlated features.
 -  **Train-Test Split** → (80% training, 20% testing).
 
----
 
-## Model Selection & Optimization
-### 🔹 Models Tested
+3) **Model Selection & Optimization**
+   Models Tested:
 - **Linear Regression**
 - **Decision Tree**
 - **Random Forest**
 - **XGBoost**  
 
-### Best Model: **XGBoost** (Highest R², Lowest RMSE & MAE)
+### Best Model: **XGBoost** before hyperparametr tuning (Highest R², Lowest RMSE & MAE)
 
----
+### Hyperparameter Tuning
+**GridSearchCV for optimizing Random Forest.**
+#### **Best Model After Hyperparameter Tuning: RandomForestRegressor
 
+----
 ## Deployment Strategy & API Usage Guide
 ### 🔹 FastAPI Deployment
 - ✅ **Framework:** FastAPI (Lightweight, fast)
